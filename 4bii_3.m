@@ -1,0 +1,14 @@
+f=-300:0.01:300;
+H=rectpulse(f,-200,100)+rectpulse(f,0,100)+rectpulse(f,200,100);
+X = cos(2*pi*f*1/200);
+figure;
+hold on;
+grid;
+plot(f,H,'r');
+plot(f,X,'b');
+legend ('H(f)');
+Y=X.*H;
+figure;
+hold on;
+grid;
+plot(f,Y,'k');

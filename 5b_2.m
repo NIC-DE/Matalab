@@ -1,0 +1,14 @@
+f=-150:0.01:150;
+Q2=rectpulse(f,0,300)-triangular(f,50,50)-triangular(f,-50,50);
+H2 =rectpulse(f,75,50)+rectpulse(f,-75,50) ;
+figure;
+hold on;
+grid;
+plot(f,H2,'r');
+plot(f,Q2,'b');
+legend ('Q2(f)');
+Y=Q2.*H2;
+figure;
+hold on;
+grid;
+plot(f,Y,'k');

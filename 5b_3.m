@@ -1,0 +1,14 @@
+f=-150:0.01:150;                  
+Y=rectpulse(f,-100,100)-triangular(f,-50,50).*rectpulse(f,-100,100)+rectpulse(f,100,100)-triangular(f,50,50).*rectpulse(f,100,100);
+Z=delta(f,-125)+delta(f,125);
+plot(f,Y);
+plot(f,Y,'b');
+legend ('Q2(f)');
+hold on;
+grid on;
+plot(f,H);
+plot(f,H,'r');
+legend ('Q2(f)');
+xlabel('f');
+ylabel('Q2(f)');
+title('Plot of Q2');
