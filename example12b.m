@@ -1,0 +1,1 @@
+Y=X.*H;figure;hold on;grid;plot(f,Y,'k');
