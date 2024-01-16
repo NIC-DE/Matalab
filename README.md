@@ -1,5 +1,4 @@
-Octave-Matalab
+Octave-Matalab  programming 
 
-Matlab language in Pli22 lessons
 
-University of Patras
+Pli22     University of Patras
